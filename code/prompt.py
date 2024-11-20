@@ -25,4 +25,4 @@ output = model.generate(**inputs, max_length=200, num_return_sequences=1)
 
 # Decode and print the response
 response = tokenizer.decode(output[0], skip_special_tokens=True)
-print(response)
+print("Response: " + response)
